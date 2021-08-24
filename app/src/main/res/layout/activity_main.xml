@@ -1,0 +1,42 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".MainActivity">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <in.unicodelabs.kdgaugeview.KdGaugeView
+        android:id="@+id/speedMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:animationTime="2000"
+        app:maxSpeed="180"
+        app:minSpeed="0"
+        app:speed="100"
+        app:speed_limit="90" />
+
+</FrameLayout>
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:text="DEVELOP WITH NITIN" />
+
+<TextView
+    android:id="@+id/editText"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:text="TextView" />
+
+
+</LinearLayout>
